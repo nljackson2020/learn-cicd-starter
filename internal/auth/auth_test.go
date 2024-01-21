@@ -7,7 +7,7 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 	// Test case 1: Valid Authorization header
-	headers := http.Header{"Authorization": []string{"ApiKey my-api-ke"}}
+	headers := http.Header{"Authorization": []string{"ApiKey my-api-key"}}
 	apiKey, err := GetAPIKey(headers)
 	if err != nil {
 		t.Errorf("Expected no error, got %v", err)
